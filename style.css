@@ -1,0 +1,59 @@
+/* =========================================
+   Week 7 Assignment: CSS Animations
+========================================= */
+
+/* Basic page styling */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Part 1: Button hover transition */
+#hoverButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00539C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#hoverButton:hover {
+  background-color: #003d73;
+  transform: scale(1.1);
+}
+
+/* Fade Box Animation */
+.fadeBox {
+  width: 200px;
+  height: 50px;
+  background-color: #FF6F61;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  animation: fade 3s infinite alternate;
+}
+
+@keyframes fade {
+  from { opacity: 0.2; }
+  to { opacity: 1; }
+}
+
+/* Part 3: Box for JS-triggered animation */
+#box {
+  width: 100px;
+  height: 100px;
+  background-color: #4CAF50;
+  margin-top: 20px;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.animate {
+  transform: translateX(200px) rotate(45deg);
+  background-color: #FF9800;
+}
